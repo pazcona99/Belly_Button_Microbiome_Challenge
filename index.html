@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style type="text/css">
     .bg-cover {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.295) 100%,rgba(255,255,255,0.9) 0%), src = "Images/Healthy-Microbiome-Optimized-1024x576.jpg";
+        background-image: url('Healthy-Microbiome-Optimized.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+  <body style="background:linear-gradient(to bottom right, #7474c4 0%, #ffffcc 100%)"></body>
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
@@ -31,6 +31,7 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
+          <p><small>Use the dropdown to select the sample ID:<br></small></p>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
@@ -43,14 +44,17 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <p><b><center>Top 10 bacteria cultures found per on volume based on ID, name and sample volume.</center></b></p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <p><b><center>Frequency of weekly sample washing. *Subjects with lower frequency of washes have a higher concentration of cultures available for sampling.</center></b></p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <p><b><center>Bubble representation of the cultures that were collected. *Higher volume of samples are the larger the bubbles.</center></b></p>
       </div>
     </div>
   </div>
