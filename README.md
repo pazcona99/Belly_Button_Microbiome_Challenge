@@ -27,3 +27,6 @@ The bubble chart for sample ID 940 appears as below:
 
 ![Bubble_Chart_Belly_Button](./Images/bubble_chart.png)
 
+After all is updated, the final rendering of the website was tweaked to add some style. There was color variation in the body, text was added below the images, and an image was added to the jumbotron. Future renditions of the website should be made so that it becomes mobile responsive.
+
+![Final_Belly_Button](./Images/Final_Website.PNG)
